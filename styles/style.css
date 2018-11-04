@@ -1,0 +1,1271 @@
+/*layout*/
+.layout {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1000px;
+	opacity: 0.5;
+	z-index: 100;
+	overflow: hidden;
+}
+
+/*GENERAL*/
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
+.wrapper {
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open sans', Arial, sans-serif;
+	color: #6d6e71;
+	background-color: #ffffff;
+}
+
+h2 {
+	font-size: 44px;
+	line-height: 0.55em; /*24px*/
+}
+
+h3 {
+	font-size: 26px;
+	line-height: 0.9em; /*24px*/
+}
+
+.menu {
+	font-size: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1rem;
+}
+
+.menu a {
+	display: block;
+	text-decoration: none;
+	color: #6d6e71;
+	font-weight: bold;
+}
+
+button {
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.btn {
+	font-family: inherit;
+	color: inherit;
+	border: none;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*HEADER*/
+
+/*Start header*/
+
+.start-header {
+	background-color: #eceef4;
+	text-align: justify;
+	font-size: 0;
+}
+
+.start-header .wrapper::after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+}
+
+.start-header ul {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.start-menu li {
+	margin-top: 16px;
+	margin-right: 6px;
+	margin-bottom: 15px;
+}
+
+.start-menu .btn {
+	position: relative;
+	box-sizing: border-box;
+	min-width: 98px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	padding-left: 25px;
+	font-size: 12px;
+	line-height: 2.06em; /*24.69px*/
+	background-color: #ffffff;
+	transition: all 0.3s;
+}
+
+.start-menu .btn:hover {
+	background-color: #fcfcfc;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2)
+}
+
+.start-menu .btn:active {
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2)
+}
+
+.start-menu .btn::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 19px; 
+	height: 22px;
+	top: 50%;
+	margin-top: -11px;
+	left: 8px;
+	background-image: url(http://u.cubeupload.com/federikos/sprites.png);
+	background-repeat: no-repeat;
+}
+
+.start-menu__btn_1::before {
+	background-position: -71px -45px;
+}
+
+.start-menu__btn_2::before {
+	background-position: -71px -126px;
+}
+
+.start-menu__btn_3::before {
+	background-position: -72px -7px;
+}
+
+.start-menu__btn_4::before {
+	background-position: -72px -84px;
+}
+
+.social a {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	width: 65px;
+	height: 62px;
+	font-size: 0;
+	border-left: 1px solid #dee0e6;
+	transition: all 0.3s;
+}
+
+.social a:hover {
+	box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.social a:active {
+	box-shadow: inset 2px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.social li:last-child a {
+	border-right: 1px solid #dee0e6;
+}
+
+.social a::before {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 21px;
+	top: 21px;
+	left: 21px;
+	background: url(http://u.cubeupload.com/federikos/sprites.png);
+
+}
+
+.social a.fb::before {
+	background-position: -9px -51px;
+}
+
+.social a.tw::before {
+	background-position: -10px -297px;
+}
+
+.social a.inst::before {
+	background-position: -9px -215px;
+}
+
+.social a.gplus::before {
+	background-position: -11px -133px;
+}
+
+/*logo, address*/
+
+.logo-section {
+	text-align: justify;
+	font-size: 0;
+}
+
+.logo-section::after {
+	content: "";
+	display: inline-block;
+	width: 100%;
+} 
+
+
+.logo {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	width: 403px;
+	height: 93px;
+	margin-top: 61px;
+	margin-bottom: 63px;
+	margin-left: -17px;
+}
+
+.logo img {
+	transition: all 0.3s;
+}
+
+.logo:hover img {
+	filter: blur(2px);
+}
+
+address {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	min-width: 227px;
+	min-height: 105px;
+	margin: 55px 6px;
+	margin-bottom: 54px;
+	padding: 0;
+	padding-top: 65px;
+}
+
+.contact {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.contact li {
+}
+
+.contact .btn {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 50px;
+	margin-right: 20px;
+	height: 38px;
+	border-radius: 0;
+	background: url(http://u.cubeupload.com/federikos/sprites.png) no-repeat;
+	/*background: red;*/
+	transition: all 0.3s;
+}
+
+.contact .btn::after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 25px;
+	top: 6px;
+	right: -10px;
+	background-color: #bcbec3;
+}
+
+.contact li:last-child .btn {
+	margin-right: 0;
+}
+
+.contact li:last-child .btn::after {
+	display: none;
+}
+
+.contact .btn-tel {
+	background-position: -121px -141px;
+}
+
+.contact .btn-tel:hover {
+	background-position: -171px -141px;
+}
+
+.contact .btn-location {
+	background-position: -116px -193px;
+}
+
+.contact .btn-location:hover {
+	background-position: -166px -193px;
+}
+
+.contact .btn-email {
+	background-position: -116px -49px;
+}
+
+.contact .btn-email:hover {
+	background-position: -166px -49px;
+}
+
+
+.contact li {
+	display: inline-block;
+}
+
+.contact a {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease 0.15s;
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding-top: 15px;
+	top: 1px;
+	right: 2px;
+	left: -2px;
+	height: 51px;
+	border: 2px solid #d4d4d5;
+	text-align: center;
+	font-style: normal;
+	text-decoration: none;
+	color: #6d6e71;
+	font-size: 1rem;
+	font-weight: 300;
+	border-radius: 5px;
+}
+
+.contact .btn:hover + a {
+	visibility: visible;
+	opacity: 1;
+}
+
+.contact a:hover {
+	visibility: visible;
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.contact a:active {
+	color: #2b2c2d;
+}
+
+.contact a::after {
+	content: '';
+	position: absolute;
+	box-sizing: border-box;
+	bottom: -10px;
+	left: 102px;
+	height: 18px;
+	width: 18px;
+	border-top: 2px solid #d4d4d5;
+	border-right: 2px solid #d4d4d5;
+	background-color: #ffffff;
+}
+
+.contact a::after {
+	transform: rotate(135deg);
+}
+
+.contact li:first-child a::after {
+	left: 25px;
+}
+
+.contact li:first-child a::before {
+	left: 35px;
+}
+
+.contact li:nth-child(3) a::after {
+	left: 175px;
+}
+
+.contact li:nth-child(3) a::before {
+	left: 185px;
+}
+
+
+/*main menu, search*/
+
+.main-menu-block {
+	border-top: 1px solid #eceef4;
+}
+
+.main-menu-block .wrapper {
+	text-align: justify;
+	font-size: 0;
+}
+
+.main-menu-block .wrapper::after {
+	content: '';
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+}
+
+.main-menu {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	font-size: 0;
+}
+
+
+.main-menu .main-menu__link {
+	display: inline-block;
+	position: relative;
+	padding: 30px 23px;
+	border-right: 1px solid #eceef4;
+	font-size: 13px;
+	line-height: 2.08em; /*27px*/
+}
+
+.main-menu .main-menu__link.home {
+	min-width: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: -5px;
+}
+
+.main-menu__link:hover {
+	color: #1faae2;
+}
+
+.main-menu__link:active {
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.main-menu__link::after {
+	display: none;
+	content: '';
+	position: absolute;
+	box-sizing: content-box;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-width: 8px 18px;
+	border-bottom-color: #1faae2;
+	bottom: 0;
+	left: 50%;
+	margin-left: -17px;
+}
+
+.main-menu__link.current {
+	text-transform: uppercase;
+	color: #1faae2;
+}
+
+.main-menu__link.current::after {
+	display: block;
+}
+
+.main-menu a:last-child {
+	border-right: none;
+}
+
+.search {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 27px;
+	margin-bottom: 29px;
+}
+
+.search::before {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 2px;
+	left: -39px;
+	background: url(http://u.cubeupload.com/federikos/sprites.png) no-repeat -128px -10px;
+}
+
+.search input {
+	border: none;
+	width: 165px;
+	margin-right: 15px;
+	font-size: 15px;
+	line-height: 1.8em; /*27px*/
+	font-weight: 300;
+}
+
+
+/*Banner*/
+
+.banner {
+	display: block;
+	height: 890px;
+	background-color: #2c83c5;
+	background: url(http://u.cubeupload.com/federikos/iback.jpg) no-repeat center top;
+}
+
+.slogan {
+	margin-left: -98px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.slogan p {
+	margin: 0;
+	padding: 0;
+}
+
+.slogan .slogan__p1 {
+	position: relative;
+	z-index: 2;
+	padding-top: 256px;
+	font-size: 58px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 1em; /*58px*/
+}
+
+.slogan .slogan__p2 {
+	position: relative;
+	display: inline;
+	margin-left: 203px;
+	padding-top: 0px;
+	font-size: 45px;
+	font-weight: 300;
+	line-height: 1.48em; /*80.58px*/
+}
+
+.slogan__p2::before {
+	content: '&';
+	position: absolute;
+	left: -101px;
+	top: -32px;
+	font-size: 120px;
+	font-weight: bold;
+	color: #bbedff;
+	margin-right: 10px;
+	z-index: 1;
+}
+
+.slider {
+	margin-top: 140px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+	text-align: right;
+}
+
+.slider__visible-blocks {
+	display: inline-block;
+	max-width: 644px;
+	max-height: 241px;
+	margin-right: 112px;
+	overflow: hidden;
+}
+
+.next {
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	width: 112px;
+	right: 0;
+	border: none;
+	background-color: #f4f4f4;
+	transition: all 0.3s;
+}
+
+.next:hover {
+	background-color: #f1fafd;
+}
+
+.next:active {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.next::before, .next::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 50%;
+	width: 30px;
+	height: 5px;
+	margin-left: -7px;
+	margin-top: -3px;
+	border-radius: 2px;
+	background-color: #d4d4d4;
+}
+
+.next::before {
+	transform: rotate(45.5deg) translateX(-13px);
+}
+
+.next::after {
+	transform: rotate(135.5deg) translateX(13px);
+}
+
+.slider__block {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.like {
+	display: block;
+	width: 100%;
+	height: 65px;
+	border: none;
+	position: absolute;
+	bottom: 0;
+	padding-left: 44px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 4.14em; /*58px*/
+	background-color: rgba(138, 202, 81, 0.9);
+	transition: all 0.3s;
+}
+
+.like:first-letter {
+	text-transform: uppercase;
+}
+
+.like:hover {
+	filter: hue-rotate(15deg);
+}
+
+.like:active {
+	transform: rotateX(360deg);
+}
+
+.like::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -15px;
+	margin-left: -35px;
+	width: 32px;
+	height: 29px;
+	background: url(http://u.cubeupload.com/federikos/sprites.png) no-repeat;
+}
+
+.like_des2::before {
+	background-position: -71px -254px;
+}
+
+.like_des1::before {
+	background-position: -71px -303px;
+}
+
+.like_des2 {
+	background-color: rgba(138, 202, 81, 0.9);
+	color: #ffffff;
+}
+
+.like_des1 {
+	background-color: rgba(254, 235, 117, 0.9);
+	color: #cc9800;
+}
+
+
+/*About*/
+
+.about {
+	margin-top: 16px;
+	margin-bottom: 86px;
+	font-size: 0;
+}
+
+.about p {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+	font-size: 1rem;
+	letter-spacing: -0.02em;
+	word-spacing: -0.02em;
+}
+
+.about .wrapper:first-child {
+	text-align: justify;
+}
+
+.about .wrapper::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.about__block {
+	display: inline-block;
+	position: relative;
+	max-width: 388px;
+	vertical-align: top;
+	padding-left: 136px;
+	word-wrap: break-word;	
+}
+
+.about__block::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 110px;
+	height: 120px;
+	background-image: url(http://u.cubeupload.com/federikos/sprites2.png);
+}
+
+.about__block_general::before {
+	background-position: -198px -12px;
+}
+
+.about__block_purposes::before {
+	background-position: -335px -16px;
+}
+
+.about h3 {
+	margin-bottom: 22px;
+	padding-left: 2px;
+}
+
+/*We do*/
+
+.we-do {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 104px;
+}
+
+.we-do::before {
+	content: '';
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1050px;
+	width: 2100px;
+	height: 100px;
+	background: rgba(255, 0, 0, 0.3);
+	background: #efefef;
+	border-top-left-radius: 50% 56px;
+	border-top-right-radius: 50% 56px;
+}
+
+.we-do .wrapper {
+	border-top: 2px solid #ebedee;
+	border-radius: 50%/30px;
+}
+
+.we-do__header {
+	max-width: 408px;
+	margin: 0 auto;
+	padding-top: 123px;
+	padding-left: 170px;
+}
+
+.we-do__header h2 {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.we-do__header h2::before {
+	content: '';
+	position: absolute;
+	width: 131px;
+	height: 120px;
+	top: -35px;
+	left: -165px;
+	background: url(http://u.cubeupload.com/federikos/sprites2.png) -151px -335px;
+}
+
+.we-do__header p {
+	padding-top: 3px;
+}
+
+.services {
+	margin-top: 98px;
+	margin-bottom: 40px;
+	text-align: justify;
+	line-height: 0;
+}
+
+.services p {
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+	font-size: 1rem;
+	letter-spacing: -0.02em;
+	word-spacing: -0.02em;
+}
+
+.services h3 {
+	margin: 0;
+	padding: 0;
+	margin-top: 12px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	line-height: 1em;
+}
+
+.services::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+.service {
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	max-width: 388px;
+	padding-left: 117px;
+	padding-bottom: 82px;
+	word-wrap: break-word;
+}
+
+.service:nth-last-child(1),
+.service:nth-last-child(2) {
+	padding-bottom: 42px;
+}
+
+
+.service:nth-child(odd) {
+	border-right: 1px solid #eaeced;
+	padding-right: 61px;
+}
+
+.service p {
+	letter-spacing: -0.02em;
+	word-spacing: 0.02em;
+}
+
+.service:nth-child(even) p {
+	letter-spacing: -0.04em;
+	word-spacing: -0.04em;
+}
+
+.service::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 110px;
+	height: 116px;
+	background-image: url(http://u.cubeupload.com/federikos/sprites2.png);
+}
+
+.service-1::before {
+	background-position: -277px -199px;
+}
+
+.service-2::before {
+	background-position: -454px -8px;
+}
+
+.service-3::before {
+	background-position: -19px -197px;
+}
+
+.service-4::before {
+	background-position: -12px -340px;
+}
+
+.service-5::before {
+	background-position: -149px -198px;
+}
+
+.service-6::before {
+	background-position: 3px -445px;
+}
+
+/*Projects*/
+
+.projects {
+	background-color: #efefef;
+	padding-top: 18px;
+	padding-bottom: 72px;
+}
+
+.projects h2 {
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+
+.projects p {
+	margin-top: 17px;
+	line-height: 1.5em;
+	letter-spacing: 0.01em;
+	word-spacing: 0.01em;
+}
+
+.projects__header {
+	position: relative;
+	max-width: 340px;
+	margin: 0 auto;
+	padding-left: 180px;
+}
+
+.projects__header:before {
+	content: '';
+	position: absolute;
+	left: -9px;
+	top: -60px;
+	width: 170px;
+	height: 160px;
+	background: url(http://u.cubeupload.com/federikos/sprites2.png) no-repeat;
+	background-position: 0 -19px;
+}
+
+.projects-menu {
+	margin-top: 82px;
+	text-align: center;
+}
+
+.projects-menu li {
+	margin-right: 14px;
+}
+
+.projects-menu li:last-child {
+	margin-right: 0;
+}
+
+.projects-menu .btn {
+	box-sizing: border-box;
+	min-width: 122px;
+	text-transform: capitalize;
+	font-size: 15px;
+	background-color: #efefef;
+	background-color: transparent;
+	border: 2px solid #cecece;
+	padding: 12px 20px;
+	transition: all 0.3s;
+	border-radius: 5px;
+}
+
+.projects-menu .wide-btn {
+	min-width: 157px;
+}
+
+.projects-menu .btn.narrow-btn {
+	min-width: 101px;
+}
+
+.projects-menu .btn:not(.active):hover {
+	background-color: #ffffff;
+	box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.projects-menu .btn.active,
+.projects-menu .btn:active {
+	background-color: #ffffff;
+	border-color: #ffffff;
+}
+
+.project-items {
+	font-size: 0;
+	margin-top: 50px;
+	margin-right: -15px;
+	overflow: hidden;
+}
+
+.project-item {
+	display: none;
+	position: relative;
+	box-sizing: border-box;
+	width: 278px;
+	height: 285px;
+	margin-right: 15px;
+	margin-bottom: 16px;
+	padding: 15px 13px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+.project-item img {
+	/* possible, to save propotions and original position, I have to use background image*/
+	border-radius: 5px;
+}
+
+.project-item .btn {
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 0 0 0 5px;
+	width: 139px;
+	height: 60px;
+	background-color: #ffffff;
+	transition: all 0.3s;
+}
+
+.project-item .btn:hover {
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.project-item .btn:active {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+	outline: none;
+}
+
+.project-item .btn::before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	background-image: url(http://u.cubeupload.com/federikos/sprites.png);
+	top: 18px;
+	left: 60px;
+}
+
+.project-item button.btn::before {
+	left: 50px;
+	background-position: -71px -210px;
+}
+
+.project-item a::before {
+	background-position: -71px -166px;
+}
+
+.project-item button.btn {
+	right: 0;
+	bottom: 0;
+	border-radius: 0 0 5px 0;
+}
+
+.project-item a.btn {
+	border-right: 1px solid #efefef;
+	left: 0;
+	bottom: 0;
+}
+
+.project-item_mob {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*FOOTER*/
+
+footer {
+	padding-top: 78px;
+	background-color: #2b2c2d;
+}
+
+footer .wrapper {
+	text-align: justify;
+}
+
+footer .wrapper::after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+footer .social,
+footer form,
+footer small,
+footer .menu {
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer .menu.social a {
+	border-color: #3c3e3f;
+}
+
+footer .social a:hover {
+	box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+footer .social a:active {
+	box-shadow: inset 2px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+footer .social .fb::before {
+	background-position: -10px -9px;
+}
+
+footer .social .tw::before {
+	background-position: -10px -256px;
+}
+
+footer .social .inst::before {
+	background-position: -10px -174px;
+}
+
+footer .social .gplus::before {
+	background-position: -10px -91px;
+}
+
+.subscribe {
+	margin: 0;
+	margin-top: 8px;
+	padding: 0;
+	position: relative;
+}
+
+.subscribe::before {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 30px;
+	top: 20px;
+	left: 17px;
+	background: url(http://u.cubeupload.com/federikos/sprites.png);
+	background-position: -125px -100px;
+}
+
+
+.subscribe input[type="text"] {
+	box-sizing: border-box;
+	width: 593px;
+	height: 65px;
+	padding-left: 83px;
+	padding-right: 95px;
+	padding-bottom: 8px;
+	font-size: 14px;
+	line-height: 2em;
+	font-weight: bold;
+	background-color: #393b3c;
+	color: #6d6e71;
+	border: none;
+	border-radius: 8px;
+}
+
+.subscribe input[type="submit"] {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 75px;
+	height: 45px;
+	color: #6d6e71;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	background-color: #494c4d;
+	transition: all 0.3s;
+}
+
+.subscribe input[type="submit"]:hover {
+	box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.subscribe input[type="submit"]:active {
+	box-shadow: inset 2px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+footer .wrapper {
+	font-size: 0;
+}
+
+aside {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+small {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 2.08em; /*27px*/
+	padding-left: 2px;
+}
+
+.aside-menu li {
+	position: relative;
+	padding-right: 20px;
+}
+
+.aside-menu li:last-child {
+	padding-right: 2px;
+}
+
+.aside-menu li::after {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background-color: #6d6e71;
+	border-radius: 50%;
+	right: 8px;
+	top: 13px;
+}
+
+.aside-menu li:last-child::after {
+	display: none;
+}
+
+.aside-menu a {
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 2.08em; /*27px*/
+}
+
+.aside-menu a:hover {
+	text-decoration: underline;
+}
+
+.aside-menu a:active {
+	color: #ffffff;
+}
+
+
+main {
+	position: relative;
+}
+
+.to-top {
+	position: fixed;
+	z-index: 5;
+	width: 100px;
+	height: 100px;
+	bottom: 80px;
+	right: 10px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	transition: all 0.3s;
+}
+
+.to-top:hover {
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.to-top:active {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.to-top::before, .to-top::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 48px;
+	top: 45px;
+	height: 30px;
+	width: 5px;
+	border-radius: 2px;
+	background-color: #d4d4d4;
+}
+
+.to-top::before {
+	transform: rotate(-45.5deg) translateY(0) translateX(13px);
+}
+
+.to-top::after {
+	transform: rotate(45.5deg) translateY(0) translateX(-13px);
+}
